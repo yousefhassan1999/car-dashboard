@@ -1,0 +1,90 @@
+.Header {
+  background-color: #ffffff;
+  width: 82%;
+  margin-left: 2px;
+  justify-content: center;
+  padding: 15px 31px;
+  gap: 10px;
+}
+
+.HeaderContainer {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.SearchContainer {
+  position: relative;
+  width: 358px;
+  padding: 12px 14px;
+  background-color: #f5f4f6;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.Search-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.Form {
+  width: 100%;
+}
+
+.Search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #7c7c8d;
+}
+.Form::before {
+  content: "";
+  background-color: #ef9011;
+  position: absolute;
+  height: 22px;
+  width: 3px;
+  top: 30%;
+  left: 12.5%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.Notification-Mask {
+  gap: 39px;
+  justify-content: space-between;
+}
+
+.Notification-image {
+  width: 19.2px;
+  height: 24px;
+}
+
+.Mask-image {
+  width: 48px;
+  height: 48px;
+}
+
+/* #### Media Queries #### */
+
+@media screen and (min-width: 1400px) {
+  .Header {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Header {
+    width: 91%;
+  }
+}
