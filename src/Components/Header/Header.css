@@ -1,6 +1,6 @@
 .Header {
   background-color: #ffffff;
-  width: 82%;
+  width: 100%;
   margin-left: 2px;
   justify-content: center;
   padding: 15px 31px;
@@ -73,18 +73,4 @@
 .Mask-image {
   width: 48px;
   height: 48px;
-}
-
-/* #### Media Queries #### */
-
-@media screen and (min-width: 1400px) {
-  .Header {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .Header {
-    width: 91%;
-  }
 }

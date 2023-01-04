@@ -1,0 +1,128 @@
+.row,
+.row2 {
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/*Start Pie Chart*/
+.Card {
+  min-width: 250px;
+  max-width: 300px;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.FirstCart {
+  background-color: #a162f7;
+}
+
+.CardTitle {
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.CardTitleImg {
+  width: 38px;
+  height: 38px;
+}
+
+.TitleName {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 31px;
+  color: #242731;
+}
+
+#first {
+  color: #ffffff;
+}
+
+#chartdiv {
+  width: 112px;
+  height: 112px;
+  overflow: visible;
+}
+/*End Pie Chart*/
+
+/*Start Bar Chart*/
+
+.BarchartDiv {
+  width: 48%;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.BarChartTitle {
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 26.04px;
+  color: #242731;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.BarChartTitle span {
+  font-weight: 400;
+}
+
+.BarChartNav {
+  width: 100%;
+  justify-content: space-between;
+  gap: 182px;
+  margin-bottom: 10px;
+}
+.ButtomsGroup {
+  height: 20px;
+  gap: 10px;
+  width: fit-content;
+}
+
+.ButtomsGroup button {
+  width: 50px;
+  height: 25px;
+  padding: 5px 12px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 13px;
+  cursor: pointer;
+}
+
+.ButtomsGroup .FirstButton {
+  background-color: #2884ff;
+  color: #ffffff;
+}
+
+.BarChartNavTitle {
+  width: fit-content;
+  color: #5f6165;
+  font-size: 14;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.BarchartDarwer {
+  width: 100%;
+  height: 223px;
+}
+/*End Bar Chart*/
