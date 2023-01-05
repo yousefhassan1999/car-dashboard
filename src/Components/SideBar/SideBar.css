@@ -78,9 +78,6 @@
 .SideBarBotomContent{
     gap: 24px;
 }
-
-/* #### Media Queries #### */
-
 @media screen and (min-width: 1400px){
     .SideBar {
         width: 15%;
