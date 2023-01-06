@@ -1,15 +1,27 @@
+.Dashboard {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
 .row,
 .row2 {
-  gap: 10px;
+  gap: 20px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
+/* #### Media Queries #### */
+
+@media screen and (min-width: 1400px) {
+  .row {
+    gap: 30px;
+  }
+}
+
 /*Start Pie Chart*/
 .Card {
-  min-width: 250px;
-  max-width: 300px;
-  padding: 20px 60px;
+  width: 24%;
+  padding: 20px 40px;
   background-color: #ffffff;
   border-radius: 14px;
   -webkit-border-radius: 14px;
@@ -44,17 +56,48 @@
   color: #ffffff;
 }
 
-#chartdiv {
-  width: 112px;
-  height: 112px;
+#chartdiv1,
+#chartdiv2,
+#chartdiv3,
+#chartdiv4 {
+  height: 110px;
   overflow: visible;
 }
+/* #### Media Queries #### */
+
+@media screen and (max-width: 1200px) {
+  .row,
+  .row2 {
+    flex-wrap: wrap;
+  }
+  .Card {
+    width: 23%;
+  }
+  .TitleName {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Card {
+    width: 48%;
+  }
+  .TitleName {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Card {
+    width: 100%;
+  }
+}
+
 /*End Pie Chart*/
 
-/*Start Bar Chart*/
+/*Start Bar Chart and Graph Chart*/
 
-.BarchartDiv {
-  width: 48%;
+.BarchartDiv,
+.GraphchartDiv {
+  width: 49%;
   background-color: #ffffff;
   padding: 15px 25px 0px 25px;
   border-radius: 14px;
@@ -64,7 +107,8 @@
   -o-border-radius: 14px;
 }
 
-.BarChartTitle {
+.BarChartTitle,
+.GraphChartTitle {
   font-weight: 400px;
   font-size: 20px;
   line-height: 26.04px;
@@ -74,23 +118,26 @@
   margin-bottom: 20px;
 }
 
-.BarChartTitle span {
+.BarChartTitle span,
+.GraphChartTitle span {
   font-weight: 400;
 }
 
-.BarChartNav {
+.BarChartNav,
+.GraphChartNav {
   width: 100%;
   justify-content: space-between;
-  gap: 182px;
   margin-bottom: 10px;
 }
-.ButtomsGroup {
+.ButtomsGroup,
+.ButtomsGroup2 {
   height: 20px;
   gap: 10px;
   width: fit-content;
 }
 
-.ButtomsGroup button {
+.ButtomsGroup button,
+.ButtomsGroup2 button {
   width: 50px;
   height: 25px;
   padding: 5px 12px;
@@ -113,7 +160,8 @@
   color: #ffffff;
 }
 
-.BarChartNavTitle {
+.BarChartNavTitle,
+.GraphChartNavTitle {
   width: fit-content;
   color: #5f6165;
   font-size: 14;
@@ -121,19 +169,41 @@
   line-height: 18px;
 }
 
-.BarchartDarwer {
-  /* margin-left: -35px;*/
-  margin-bottom: -20px; 
+.BarchartDarwer,
+.GraphchartDarwer {
+  height: 30vh;
+  margin-bottom: -20px;
   width: 100%;
-  height: 230px;
 }
-/*End Bar Chart*/
-
 
 /* #### Media Queries #### */
 
-@media screen and (min-width: 1400px){
-  .BarchartDarwer {
-    height: 350px;
+@media screen and (max-width: 1200px) {
+  .BarchartDiv,
+  .GraphchartDiv {
+    width: 48%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .BarchartDiv,
+  .GraphchartDiv {
+    width: 100%;
+  }
+}
+/*End Bar Chart and Graph Chart*/
+
+/*Start Graph Chart special*/
+.GraphchartDiv {
+  padding: 22px 24px 0px 24px;
+}
+
+.GraphChartTitle {
+  margin-top: -5px;
+}
+
+.ButtomsGroup2 .FirstButton2 {
+  background-color: #ff764c;
+  color: #ffffff;
+}
+
+/*End Graph Chart special*/

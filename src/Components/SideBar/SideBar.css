@@ -28,7 +28,7 @@
   gap: 10px;
 }
 
-.LogoImg{
+.LogoImg {
   width: 26px;
   height: 26px;
 }
@@ -41,56 +41,94 @@
 }
 
 .SideBarTopContent,
-.SideBarBotomContent{
-    width: 100%;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
+.SideBarBotomContent {
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .TopContentItemDiv,
-.BotomContentItemDiv{
-    width: 100%;
-    padding: 7px 8px;
-    justify-content: flex-start;
-    height: 34px;
+.BotomContentItemDiv {
+  width: 100%;
+  padding: 7px 8px;
+  justify-content: flex-start;
+  height: 34px;
 }
 .TopContentItemcontainer,
-.BotomContentItemcontainer{
-    width: fit-content;
-    height: 20px;
-    gap: 8px;
+.BotomContentItemcontainer {
+  width: fit-content;
+  height: 20px;
+  gap: 8px;
 }
 
-.SideBarContentIcon{
-    width: 20px;
-    width: 20px;
+.SideBarContentIcon {
+  width: 20px;
 }
 
-.itemName{
-    font-size: 14px;
-    line-height: 18px;
-    color: #5F6165;
-    cursor: pointer;
+.itemName {
+  font-size: 14px;
+  line-height: 18px;
+  color: #5f6165;
+  cursor: pointer;
 }
 
-.SideBarBotomContent{
-    gap: 24px;
-}
-@media screen and (min-width: 1400px){
-    .SideBar {
-        width: 15%;
-      }
+.SideBarBotomContent {
+  gap: 24px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 1400px) {
   .SideBar {
-      width: 9%;
-      padding: 8px 8px;
-    }
-    .LogoTitle,
-    .itemName{
-      display: none;
-    }
+    width: 15%;
+  }
+
+  .LogoImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .LogoTitle {
+    line-height: 40px;
+    font-size: 30px;
+  }
+
+  .SideBarContentIcon {
+    width: 22px;
+  }
+
+  .itemName {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .SideBar {
+    width: 9%;
+    padding: 8px 8px;
+  }
+  .LogoTitle,
+  .itemName {
+    display: none;
+  }
+  .LogoImg {
+    width: 32px;
+    height: 32px;
+  }
+  .SideBarContentIcon {
+    width: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .SideBar {
+    width: 12%;
+    padding: 8px 8px;
+  }
+  .LogoImg {
+    width: 30px;
+    height: 30px;
+  }
+  .SideBarContentIcon {
+    width: 22px;
+  }
 }

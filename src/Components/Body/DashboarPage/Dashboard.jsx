@@ -8,6 +8,7 @@ import Tire from "../../../assets/Tire.png";
 import { PieChartData } from "../../../DummyData/PieChartData";
 import { createChart } from "../../../ChartsCreator/PieChartFunc";
 import { createBarChart } from "../../../ChartsCreator/BarChartFunc";
+import { createGraphChart } from "../../../ChartsCreator/GraphChartFunc";
 
 const cards = [
   { image: Componen, Name: "Energy" },
@@ -22,10 +23,11 @@ const Dashboard = () => {
       return createChart(dic);
     });
     var newBarChart = createBarChart();
-
+    var newGraphChart = createGraphChart();
     return () => {
       newARR.map((chart) => chart.dispose());
       newBarChart.dispose();
+      newGraphChart.dispose();
     };
   }, []);
 
@@ -64,7 +66,22 @@ const Dashboard = () => {
           </div>
           <div className="BarchartDarwer"></div>
         </div>
+        <div className="GraphchartDiv">
+          <h1 className="GraphChartTitle">
+            Car <span>Statistics</span>
+          </h1>
+          <div className="GraphChartNav flex">
+            <div className="GraphChartNavTitle">20 February 2022</div>
+            <div className="ButtomsGroup2 flex">
+              <button className="FirstButton2">Day</button>
+              <button>Week</button>
+              <button>Month</button>
+            </div>
+          </div>
+          <div className="GraphchartDarwer"></div>
+        </div>
       </div>
+      <div className="row3 flex"></div>
     </div>
   );
 };
