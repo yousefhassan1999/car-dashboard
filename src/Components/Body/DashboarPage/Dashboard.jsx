@@ -5,6 +5,13 @@ import Componen from "../../../assets/Component 1.png";
 import Range from "../../../assets/Range.png";
 import Break from "../../../assets/Break.png";
 import Tire from "../../../assets/Tire.png";
+import Reload from "../../../assets/Reload.png";
+import Car1 from "../../../assets/car1.png";
+import Car2 from "../../../assets/car2.png";
+import Car3 from "../../../assets/car3.png";
+import CarCarIcon1 from "../../../assets/CarCarIcon1.png";
+import CarCarIcon2 from "../../../assets/CarCarIcon2.png";
+import CarCarIcon3 from "../../../assets/CarCarIcon3.png";
 import { PieChartData } from "../../../DummyData/PieChartData";
 import { createChart } from "../../../ChartsCreator/PieChartFunc";
 import { createBarChart } from "../../../ChartsCreator/BarChartFunc";
@@ -15,6 +22,30 @@ const cards = [
   { image: Range, Name: "Range" },
   { image: Break, Name: "Break fluid" },
   { image: Tire, Name: "Tire Wear" },
+];
+
+const carCards = [
+  {
+    title: "64% Recommend",
+    image: Car1,
+    Name: "Mini Cooper",
+    kilometer: "132K",
+    hours: "$32/h",
+  },
+  {
+    title: "74% Recommend",
+    image: Car2,
+    Name: "Porsche 911 Carrera",
+    kilometer: "130K",
+    hours: "$28/h",
+  },
+  {
+    title: "74% Recommend",
+    image: Car3,
+    Name: "Porsche 911 Carrera",
+    kilometer: "130",
+    hours: "$28/h",
+  },
 ];
 
 const Dashboard = () => {
@@ -81,7 +112,36 @@ const Dashboard = () => {
           <div className="GraphchartDarwer"></div>
         </div>
       </div>
-      <div className="row3 flex"></div>
+      <div className="row3 flex">
+        {carCards.map((card, index) => {
+          return (
+            <div className={"CarCard CardCarIndex" + index} key={index}>
+              <div className="topDiv flex">
+                <img className="ReloadImg" src={Reload} alt="" />
+                <h1 className="topTitle"> {card.title}</h1>
+              </div>
+              <div className="centerDivCont flex">
+                <div className="centerDiv">
+                  <img className="CarImg" src={card.image} alt="" />
+                </div>
+              </div>
+
+              <div className="BottomDiv flex">
+                <div className="BottomDivTitle">{card.Name}</div>
+                <div className="BottomDivIconsPrice flex">
+                  <div className="BottomIcons flex">
+                    <img className="CarCardIcon1" src={CarCarIcon1} alt="" />
+                    <div className="KiloMeter">{card.kilometer}</div>
+                    <img className="CarCardIcon2" src={CarCarIcon2} alt="" />
+                    <img className="CarCardIcon3" src={CarCarIcon3} alt="" />
+                  </div>
+                  <div className="BottomPrice">{card.hours}</div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

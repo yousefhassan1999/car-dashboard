@@ -67,7 +67,8 @@
 
 @media screen and (max-width: 1200px) {
   .row,
-  .row2 {
+  .row2,
+  .row3{
     flex-wrap: wrap;
   }
   .Card {
@@ -171,7 +172,7 @@
 
 .BarchartDarwer,
 .GraphchartDarwer {
-  height: 30vh;
+  height: 32vh;
   margin-bottom: -20px;
   width: 100%;
 }
@@ -207,3 +208,120 @@
 }
 
 /*End Graph Chart special*/
+
+/*Start Car Cards*/
+.row3 {
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.CarCard {
+  width: 33%;
+  padding: 15px 27px;
+  min-width: 200px;
+  height: 236px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+.CardCarIndex0{
+  background-color: #e1dfa4;
+}
+.CardCarIndex1{
+  background-color: #E3ECF1;
+}
+.CardCarIndex2{
+  background-color: #F4E3E5;
+}
+.topDiv {
+  margin-bottom: 20px;
+}
+.ReloadImg {
+  width: 20.2px;
+  margin-right: 15px;
+}
+.topTitle {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #242731;
+}
+
+.centerDivCont{
+  width: 100%;
+  justify-content: center;
+}
+.centerDiv {
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.BottomDiv {
+  flex-direction: column;
+  gap: 5px;
+}
+.BottomDivTitle {
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.BottomDivIconsPrice {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.BottomIcons{
+  gap: 20px;
+}
+
+.KiloMeter{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #72767C;
+}
+
+.CarCardIcon1 {
+  width: 16.67px;
+  height: 16.67px;
+}
+.CarCardIcon2 {
+  width: 13.36px;
+  height: 13.36px;
+}
+.CarCardIcon3 {
+  width: 10.67px;
+  height: 13.36px;
+}
+
+.BottomPrice {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #72767c;
+}
+
+@media screen and (max-width: 1200px) {
+  .centerDivCont{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .CarCard {
+    width: 31.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .CarCard {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .CarCard {
+    width: 100%;
+  }
+}
+/*End Car Cards*/
