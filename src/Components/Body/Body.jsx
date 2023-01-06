@@ -1,9 +1,9 @@
 import "./Body.css";
-import Dashboard from "./DashboarPage/Dashboard";
+import { Outlet } from "react-router-dom";
 const Body = () => {
   return (
     <div className="body">
-        <Dashboard />
+        <Outlet />
     </div>
   );
 };

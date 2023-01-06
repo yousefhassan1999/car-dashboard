@@ -16,6 +16,8 @@ import { PieChartData } from "../../../DummyData/PieChartData";
 import { createChart } from "../../../ChartsCreator/PieChartFunc";
 import { createBarChart } from "../../../ChartsCreator/BarChartFunc";
 import { createGraphChart } from "../../../ChartsCreator/GraphChartFunc";
+import 'simplebar';
+import 'simplebar-react/dist/simplebar.min.css';
 
 const cards = [
   { image: Componen, Name: "Energy" },
@@ -63,7 +65,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="Dashboard">
+    <div className="Dashboard" data-simplebar>
       <div className="row flex">
         {cards.map((card, index) => {
           return (
