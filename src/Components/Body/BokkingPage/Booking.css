@@ -1,0 +1,197 @@
+.Booking{
+    height: 90vh;
+    overflow: auto;
+}
+.BookingHeader {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #242731;
+  margin-bottom: 40px;
+}
+
+/*Start Nav Bar*/
+.BookingNav {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dropDownMenuCont {
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.DropMenuTitle {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 22.5px;
+  -webkit-border-radius: 22.5px;
+  -moz-border-radius: 22.5px;
+  -ms-border-radius: 22.5px;
+  -o-border-radius: 22.5px;
+  gap: 35px;
+}
+
+.DropMenuTitle span {
+  color: #5f6165;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  left: 5%;
+  top: 45px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.BookingNavRightIcons {
+  gap: 20px;
+}
+
+.NavRightIconsCon {
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+}
+
+.NavRightIconsCon.first {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(53, 53, 53, 0.1);
+}
+
+.Icon1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #777e90;
+}
+/*End Nav Bar*/
+
+/*Start Booking Cards*/
+.BookingCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.BookingCard{
+    width: 32%;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.BookingTopCard{
+    width: 100%;
+}
+.BookingTopCard .fristRow{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.BookingTopCard .fristRow span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #242731;
+}
+
+.BookingTopCard .fristRow img{
+    width: 20px;
+    height: 18px;
+}
+
+.SubTitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #72767C;
+}
+
+.BookingCenterCont{
+    width: 100%;
+    justify-content: center;
+}
+.BookingCenterCard{
+    width: fit-content;
+    height: 150px;
+    padding: 20px;
+}
+
+.BookingCenterCard img{
+    width: 100%;
+    height: 100%;
+}
+
+.BookingBottom{
+    justify-content: space-between;
+}
+
+.BookingBottomLeft{
+    gap: 20px;
+}
+
+.IconDiv{
+    gap: 5px;
+    color: #72767C;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.BookingBottomRight{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.BookingBottomRight span{
+    color: #72767C;
+}
+
+/* #### Media Queries #### */
+
+@media screen and (max-width: 1200px) {
+    .BookingCard{
+        width: 48%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .BookingCard{
+        width: 100%;
+    }
+  }
+  
+/*End Booking Cards*/
