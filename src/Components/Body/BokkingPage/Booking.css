@@ -1,6 +1,6 @@
-.Booking{
-    height: 90vh;
-    overflow: auto;
+.Booking {
+  height: 90vh;
+  overflow: auto;
 }
 .BookingHeader {
   font-size: 30px;
@@ -103,95 +103,137 @@
   gap: 20px;
   margin-bottom: 20px;
 }
-.BookingCard{
-    width: 32%;
-    padding: 24px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+.BookingCard {
+  width: 32%;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 
-.BookingTopCard{
-    width: 100%;
+.BookingTopCard {
+  width: 100%;
 }
-.BookingTopCard .fristRow{
-    width: 100%;
-    justify-content: space-between;
-}
-
-.BookingTopCard .fristRow span{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #242731;
+.BookingTopCard .fristRow {
+  width: 100%;
+  justify-content: space-between;
 }
 
-.BookingTopCard .fristRow img{
-    width: 20px;
-    height: 18px;
+.BookingTopCard .fristRow span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #242731;
 }
 
-.SubTitle{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    color: #72767C;
+.BookingTopCard .fristRow img {
+  width: 20px;
+  height: 18px;
 }
 
-.BookingCenterCont{
-    width: 100%;
-    justify-content: center;
-}
-.BookingCenterCard{
-    width: fit-content;
-    height: 150px;
-    padding: 20px;
+.SubTitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #72767c;
 }
 
-.BookingCenterCard img{
-    width: 100%;
-    height: 100%;
+.BookingCenterCont {
+  width: 100%;
+  justify-content: center;
+}
+.BookingCenterCard {
+  width: fit-content;
+  height: 150px;
+  padding: 20px;
 }
 
-.BookingBottom{
-    justify-content: space-between;
+.BookingCenterCard img {
+  width: 100%;
+  height: 100%;
 }
 
-.BookingBottomLeft{
-    gap: 20px;
+.BookingBottom {
+  justify-content: space-between;
 }
 
-.IconDiv{
-    gap: 5px;
-    color: #72767C;
-    font-size: 16px;
-    font-weight: 400;
+.BookingBottomLeft {
+  gap: 20px;
 }
 
-.BookingBottomRight{
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
+.IconDiv {
+  gap: 5px;
+  color: #72767c;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.BookingBottomRight span{
-    color: #72767C;
+.BookingBottomRight {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.BookingBottomRight span {
+  color: #72767c;
 }
 
 /* #### Media Queries #### */
 
 @media screen and (max-width: 1200px) {
-    .BookingCard{
-        width: 48%;
-    }
+  .BookingCard {
+    width: 48%;
   }
-  @media screen and (max-width: 700px) {
-    .BookingCard{
-        width: 100%;
-    }
+}
+@media screen and (max-width: 700px) {
+  .BookingCard {
+    width: 100%;
   }
-  
+  /*Start Nav Bar*/
+  .BookingNav {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .dropDownMenuCont {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .BookingNavRightIcons {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .NavRightIconsCon {
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .NavRightIconsCon.first {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px 0px rgba(53, 53, 53, 0.1);
+  }
+
+  .Icon1 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #777e90;
+  }
+  /*End Nav Bar*/
+}
+
 /*End Booking Cards*/
