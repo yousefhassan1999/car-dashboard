@@ -74,3 +74,26 @@
   width: 48px;
   height: 48px;
 }
+
+/* #### Media Queries #### */
+
+@media screen and (max-width: 600px) {
+  .SearchContainer {
+    position: relative;
+    width: 200px;
+  }
+  .Form::before {
+    left: 21%;
+  }
+  .Notification-Mask {
+    gap: 20px;
+  }
+  .Notification-image {
+    width: 15px;
+    height: 20px;
+  }
+  .Mask-image {
+    width: 40px;
+    height: 40px;
+  }
+}

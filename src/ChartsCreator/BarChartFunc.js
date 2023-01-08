@@ -52,12 +52,17 @@ export const createBarChart = () => {
     }
   });
 
-  var rect = series.columns.template.createChild(am4core.Rectangle);
+  var container = series.columns.template.createChild(am4core.Container);
+  container.width = 58;
+  container.height = 31;
+  container.x = am4core.percent(70);
+  container.y = am4core.percent(11);
+  container.zIndex = 1000
+
+  var rect = container.createChild(am4core.Rectangle);
   rect.width = 58;
   rect.height = 31;
   rect.fill = am4core.color("#282B32");
-  rect.x = 25;
-  rect.y = 20;
   rect.zIndex = 100;
   rect.adapter.add("disabled", (disabled, target) => {
     if (target.dataItem && target.dataItem.values.valueY.value === max) {
@@ -67,10 +72,10 @@ export const createBarChart = () => {
     }
   });
 
-  var bullet = series.columns.template.createChild(am4core.Circle);
+  var bullet = container.createChild(am4core.Circle);
   bullet.radius = 4;
-  bullet.y = 42;
-  bullet.x = 32;
+  bullet.x = am4core.percent(10);
+  bullet.y = am4core.percent(70);
   bullet.zIndex = 101;
   bullet.fill = am4core.color("#2884FF");
   bullet.adapter.add("disabled", (disabled, target) => {
@@ -81,10 +86,10 @@ export const createBarChart = () => {
     }
   });
 
-  var text = series.columns.template.createChild(am4core.Label);
+  var text = container.createChild(am4core.Label);
   text.text = "1 PM";
-  text.y = 20;
-  text.x = 55;
+  text.x = am4core.percent(45);
+  text.y = am4core.percent(5);
   text.horizontalCenter = "right";
   text.zIndex = 101;
   text.fill = am4core.color("#FFFFFF");
@@ -98,10 +103,10 @@ export const createBarChart = () => {
     }
   });
 
-  var text2 = series.columns.template.createChild(am4core.Label);
+  var text2 = container.createChild(am4core.Label);
   text2.text = "157K";
-  text2.y = 33;
-  text2.x = 67;
+  text2.x = am4core.percent(65);
+  text2.y = am4core.percent(45);
   text2.horizontalCenter = "right";
   text2.zIndex = 101;
   text2.fill = am4core.color("#FFFFFF");

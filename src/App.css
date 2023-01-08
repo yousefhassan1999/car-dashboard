@@ -424,4 +424,9 @@ h1 {
     width: 91%;
   }
 }
+@media screen and (max-width: 600px) {
+  .TOP-DownDiv {
+    width: 88%;
+  }
+}
 /*End Custom Css*/
