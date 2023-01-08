@@ -38,11 +38,15 @@ const BottomContentName = ["Settings", "Log out"];
 const SideBar = () => {
   const [showIndex, setshowIndex] = useState(0);
   let navigate = useNavigate();
-  
-  const navigatePage = (index,name) =>{
-    setshowIndex(index);
-    navigate(name)
-  }
+
+  const navigatePage = (index, name) => {
+    if (index === 0 || index === 2) {
+      setshowIndex(index);
+      navigate(name);
+    } else {
+      alert("Not Implemented Yet Only Choose Daashboard or Booking Sections");
+    }
+  };
   return (
     <div className="SideBar grid">
       <div className="SideBar-Content flex">
@@ -55,9 +59,13 @@ const SideBar = () => {
             {TopContentName.map((name, index) => {
               return (
                 <li
-                  className={showIndex===index?"TopContentItemDiv active":"TopContentItemDiv"}
+                  className={
+                    showIndex === index
+                      ? "TopContentItemDiv active"
+                      : "TopContentItemDiv"
+                  }
                   key={index}
-                  onClick={() => navigatePage(index,name)}
+                  onClick={() => navigatePage(index, name)}
                 >
                   <div className="TopContentItemcontainer flex">
                     <img
