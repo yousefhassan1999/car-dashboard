@@ -106,6 +106,8 @@
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
   -o-border-radius: 14px;
+  overflow: hidden;
+
 }
 
 .BarChartTitle,

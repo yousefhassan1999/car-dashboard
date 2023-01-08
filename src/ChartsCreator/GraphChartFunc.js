@@ -14,6 +14,7 @@ export const createGraphChart = () => {
 
   // Create axes
   var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+  categoryAxis.renderer.inside = true;
   categoryAxis.dataFields.category = "time";
   categoryAxis.renderer.minGridDistance = 30;
   categoryAxis.startLocation = 2;
@@ -27,6 +28,7 @@ export const createGraphChart = () => {
 
   var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
   valueAxis.renderer.inside = true;
+  
   valueAxis.renderer.grid.template.stroke = am4core.color("#F2F2F2");
   valueAxis.renderer.labels.template.adapter.add("text", () => {
     return "";
