@@ -52,9 +52,13 @@
 .TopContentItemDiv,
 .BotomContentItemDiv {
   width: 100%;
-  padding: 7px 8px;
+  padding: 10px 9px;
   justify-content: flex-start;
-  height: 34px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .TopContentItemcontainer,
 .BotomContentItemcontainer {
@@ -76,6 +80,10 @@
 
 .SideBarBotomContent {
   gap: 24px;
+}
+
+.active{
+  background-color: #F3F5F8;
 }
 
 @media screen and (min-width: 1400px) {

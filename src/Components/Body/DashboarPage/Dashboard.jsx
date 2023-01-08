@@ -45,7 +45,7 @@ const carCards = [
     title: "74% Recommend",
     image: Car3,
     Name: "Porsche 911 Carrera",
-    kilometer: "130",
+    kilometer: "130K",
     hours: "$28/h",
   },
 ];

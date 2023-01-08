@@ -60,7 +60,7 @@
 #chartdiv2,
 #chartdiv3,
 #chartdiv4 {
-  height: 110px;
+  height: 130px;
   overflow: visible;
 }
 /* #### Media Queries #### */
@@ -172,7 +172,7 @@
 
 .BarchartDarwer,
 .GraphchartDarwer {
-  height: 28vh;
+  height: 25vh;
   margin-bottom: -20px;
   width: 100%;
 }
@@ -211,16 +211,16 @@
 
 /*Start Car Cards*/
 .row3 {
-  margin-top: 30px;
+  margin-top: 25px;
   gap: 20px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .CarCard {
   width: 33%;
   padding: 15px 27px;
   min-width: 200px;
-  height: 236px;
   border-radius: 14px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
@@ -237,7 +237,7 @@
   background-color: #F4E3E5;
 }
 .topDiv {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .ReloadImg {
   width: 20.2px;

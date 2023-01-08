@@ -11,6 +11,7 @@ import comment from "../../assets/comment.png";
 import Settings from "../../assets/Settings.png";
 import SignOut from "../../assets/Sign Out.png";
 import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 
 const TopContenticons = [
   dashboardIcon,
@@ -35,7 +36,13 @@ const TopContentName = [
 const BottomContenticons = [Settings, SignOut];
 const BottomContentName = ["Settings", "Log out"];
 const SideBar = () => {
+  const [showIndex, setshowIndex] = useState(0);
   let navigate = useNavigate();
+  
+  const navigatePage = (index,name) =>{
+    setshowIndex(index);
+    navigate(name)
+  }
   return (
     <div className="SideBar grid">
       <div className="SideBar-Content flex">
@@ -47,7 +54,11 @@ const SideBar = () => {
           <ul className="SideBarTopContent flex">
             {TopContentName.map((name, index) => {
               return (
-                <li className="TopContentItemDiv" key={index} onClick={() => navigate(name)}>
+                <li
+                  className={showIndex===index?"TopContentItemDiv active":"TopContentItemDiv"}
+                  key={index}
+                  onClick={() => navigatePage(index,name)}
+                >
                   <div className="TopContentItemcontainer flex">
                     <img
                       className="SideBarContentIcon"
